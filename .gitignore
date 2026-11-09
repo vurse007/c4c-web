@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
+
+# Local screenshots / tool state (not part of the site)
+/desk.png
+/desk2.png
+/mob.png
+/mob2.png
+/v.png
+/v1.png
+/x.png
+/harvis.json
+.playwright/
+.claude/
