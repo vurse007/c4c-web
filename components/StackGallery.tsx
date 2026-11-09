@@ -20,6 +20,9 @@ export const PHOTOS = [
 
 const START_SCALE = 0.55;
 const SLIDE_VH = 62;
+// How many photos past the visible one to keep downloading, so a normal scroll
+// never reaches a photo that hasn't arrived yet.
+const PRELOAD_AHEAD = 3;
 
 export default function StackGallery({
   photos = PHOTOS,
@@ -30,7 +33,9 @@ export default function StackGallery({
   const frameRef = useRef<HTMLDivElement>(null);
   const activeRef = useRef(0);
   const [active, setActive] = useState(0);
-  const [mountedThrough, setMountedThrough] = useState(1);
+  // -1 until the section is near the viewport, so nothing downloads early.
+  const [mountedThrough, setMountedThrough] = useState(-1);
+  const [loaded, setLoaded] = useState<ReadonlySet<number>>(() => new Set());
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -40,7 +45,15 @@ export default function StackGallery({
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) {
       frame.style.transform = "scale(0.92)";
-      return;
+      // No scroll-driven slideshow: just load the first photo when near.
+      const io = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setMountedThrough((prev) => Math.max(prev, 0));
+        },
+        { rootMargin: "150% 0px" },
+      );
+      io.observe(section);
+      return () => io.disconnect();
     }
 
     let ticking = false;
@@ -60,7 +73,9 @@ export default function StackGallery({
       if (idx !== activeRef.current) {
         activeRef.current = idx;
         setActive(idx);
-        setMountedThrough((prev) => Math.max(prev, Math.min(photos.length - 1, idx + 1)));
+        setMountedThrough((prev) =>
+          Math.max(prev, Math.min(photos.length - 1, idx + PRELOAD_AHEAD)),
+        );
       }
     };
 
@@ -73,6 +88,9 @@ export default function StackGallery({
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          setMountedThrough((prev) =>
+            Math.max(prev, Math.min(photos.length - 1, activeRef.current + PRELOAD_AHEAD)),
+          );
           if (!listening) {
             listening = true;
             window.addEventListener("scroll", onScroll, { passive: true });
@@ -87,7 +105,8 @@ export default function StackGallery({
           frame.style.willChange = "auto";
         }
       },
-      { rootMargin: "20% 0px" },
+      // Start fetching well before the section scrolls in.
+      { rootMargin: "150% 0px" },
     );
 
     io.observe(section);
@@ -99,6 +118,16 @@ export default function StackGallery({
       window.removeEventListener("resize", onScroll);
     };
   }, [photos.length]);
+
+  // Show the active photo once it has loaded; until then keep the closest
+  // earlier photo that has, instead of flashing an empty frame.
+  let shown = -1;
+  for (let i = active; i >= 0; i--) {
+    if (loaded.has(i)) {
+      shown = i;
+      break;
+    }
+  }
 
   return (
     <section
@@ -120,8 +149,15 @@ export default function StackGallery({
               fill
               sizes="92vw"
               quality={70}
+              // These are mounted deliberately just ahead of the scroll
+              // position, so fetch them now — native lazy loading would wait
+              // until they're on screen and leave a blank frame.
+              loading="eager"
+              onLoad={() =>
+                setLoaded((prev) => (prev.has(i) ? prev : new Set(prev).add(i)))
+              }
               className="object-cover"
-              style={{ opacity: i === active ? 1 : 0 }}
+              style={{ opacity: i === shown ? 1 : 0 }}
             />
           ))}
         </div>
