@@ -94,6 +94,7 @@ function WatchModal({
         <iframe
           src={`https://www.youtube.com/embed/${WATCH_YOUTUBE_ID}?autoplay=1&rel=0`}
           title="Caring for Caregivers"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           className="h-full w-full"

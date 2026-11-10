@@ -66,7 +66,8 @@ export const TEAM: PersonProfile[] = [
     role: "Outreach Coordinator",
     photo: null,
     bio: [
-      "Audrey Eum is a dedicated member of C4C who is passionate about making a positive impact in her community and helping others. Through C4C, she hopes to contribute to meaningful projects, meet new people, and develop her leadership and teamwork skills. She looks forward to gaining new experiences, working with others, and finding creative ways to make a difference in her community."
+      "Audrey Eum serves as Outreach Coordinator of Caring for Caregivers. Audrey is passionate about making a positive impact in her community and helping others.",
+      "Through Caring for Caregivers, Audrey hopes to contribute to meaningful projects, meet new people, and build leadership and teamwork skills. Audrey looks forward to new experiences and to finding creative ways to make a difference in the community.",
     ],
   },
   {
@@ -74,7 +75,8 @@ export const TEAM: PersonProfile[] = [
     role: "Co-Vice President",
     photo: null,
     bio: [
-      "Hi, I’m Ila Semsarieh, and I’m thrilled to be on the production team within Caring for Caregivers! I'm responsible for brainstorming innovative and creative content ideas for our social media accounts and assisting in the planning of various events. I joined C4C because of my passion for the medical field. I’ve always dreamed of becoming a surgical oncologist, driven by the desire to help people feel better. I believe that through this initiative, I can contribute positively to the medical community and make a meaningful impact on those who dedicate their lives to making the field a better place. Furthermore, I hope this experience will deepen my passion for medicine and further fuel my aspirations in this fulfilling profession. "
+      "Ila Semsarieh serves as Co-Vice President and on the production team of Caring for Caregivers. Ila brainstorms creative content ideas for the organization's social media accounts and helps plan a range of events.",
+      "Ila joined out of a passion for the medical field and a long-held goal of becoming a surgical oncologist, driven by a desire to help people feel better. Ila hopes this experience will deepen that passion and make a meaningful impact on the medical community.",
     ],
   },
   {
@@ -83,7 +85,8 @@ export const TEAM: PersonProfile[] = [
     photo: "/headshots/Kayla Doan.JPG",
     featured: false, //change later if needed
     bio: [
-      "Kayla Doan serves as a Vice President and Lead Research Coordinator of Caring for Caregivers. She helps plan and coordinate research opportunities to expand the Simulated Stress Exposure Program. Her interest in healthcare and passion for helping others drives her commitment to those dedicated to caring for others. She also works closely with the organization’s research professors to refine initiatives in hope to address healthcare burnout. She hopes to create impactful experiences and continuing promoting coping strategies to fellow students."
+      "Kayla Doan serves as Co-Vice President and Lead Research Coordinator of Caring for Caregivers. Kayla helps plan and coordinate research opportunities to expand the Simulated Stress Exposure Program and works closely with the organization's research professors to refine initiatives that address healthcare burnout.",
+      "Kayla's interest in healthcare and passion for helping others drive a commitment to those who dedicate their lives to caring for others. Kayla hopes to create impactful experiences and continue promoting coping strategies to fellow students.",
     ],
   },
   {
@@ -91,7 +94,8 @@ export const TEAM: PersonProfile[] = [
     role: "Research Coordinator",
     photo: "/headshots/nathaniel.png",
     bio: [
-      "Nathaniel Gluzman-Chuang serves as a part of the research production team for Caring for Caregivers. He helps to provide ideas on where and how to host creative events as well as brainstorm special ways to educate people about the dangers of burnout. His work helps to set the stage for new events to be hosted for and with various nonprofits and recipients. His work with Caring for Caregivers has grown his leadership skills as well as his ability to communicate and reach out to many different caregiving professionals. His passion for medicine relates to his passion for helping others, driving him to make a bigger impact."
+      "Nathaniel Gluzman-Chuang serves as a member of the research production team of Caring for Caregivers. Nathaniel helps generate ideas for where and how to host creative events and brainstorms special ways to educate people about the dangers of burnout.",
+      "Nathaniel's work helps set the stage for new events with various nonprofits and recipients, and has strengthened his leadership skills and ability to reach caregiving professionals. His passion for medicine is closely tied to his passion for helping others.",
     ],
   },
   {
@@ -99,7 +103,8 @@ export const TEAM: PersonProfile[] = [
     role: "Event Coordinator",
     photo: null,
     bio: [
-      "Hi, my name is Cole Gress. I help with events, volunteering, and research for the future. I work with my fellow club members in order to connect and make opportunities for Caring For Caregivers to be able to perform research and events. I joined Caring For Caregivers this year because I thought it was a great opportunity for me to express my gratitude and learn. I am hoping to make it into the medical field in the future so I not only saw this as a way to thank those that spend their days and nights working to care for others, but to also learn about the paths and routes to becoming someone in the medical field. I aim to express my immense appreciation towards the caregivers for all they do for our communities and help make their jobs a bit easier in any way possible."
+      "Cole Gress serves as Event Coordinator of Caring for Caregivers, helping with events, volunteering, and research. Cole works with fellow club members to create opportunities for the organization to conduct research and host events.",
+      "Cole joined this year to express gratitude and to learn, and hopes to enter the medical field one day. Cole sees the work as a way to thank those who spend their days and nights caring for others, and to learn about the paths into the medical profession.",
     ],
   },
   {
@@ -107,7 +112,8 @@ export const TEAM: PersonProfile[] = [
     role: "Event Coordinator",
     photo: "/headshots/brandon.JPG",
     bio: [
-      "Hi! I'm Brandon Chang! As the event coordinator, I work to organize and coordinate various school and external events for the chapter. I've seen firsthand how demanding being a caregiver can be, so C4C truly resonated within me. Joining the board felt like a meaningful way to advocate for the people who selflessly give so much to others"
+      "Brandon Chang serves as Event Coordinator of the Irvine chapter of Caring for Caregivers. Brandon organizes and coordinates school and external events for the chapter.",
+      "Brandon has seen firsthand how demanding caregiving can be, which made Caring for Caregivers resonate. Joining the board felt like a meaningful way to advocate for the people who selflessly give so much to others.",
     ],
   },
   {
@@ -119,11 +125,12 @@ export const TEAM: PersonProfile[] = [
     ],
   },
   {
-    name: "Hailey [lastname]",
+    name: "Hailey Liu",
     role: "Design & Social Media",
     photo: null,
     bio: [
-      "[send bio to ayush]"
+      "Hailey Liu serves as one of the Social Media Managers of Caring for Caregivers. Hailey helps edit videos, create content, and promote the organization on social media.",
+      "Through this work, Hailey builds communication and collaboration skills alongside others.",
     ],
   },
   {
@@ -139,7 +146,8 @@ export const TEAM: PersonProfile[] = [
     role: "Outreach Coordinator",
     photo: "/headshots/Chase Gress.JPG",
     bio: [
-      "Hello, my name is Chase Gress! My job is to connect with healthcare providers in our area and create meetings and opportunities for us to spread awareness and provide aid. I joined C4C because, as a child of a healthcare provider, I understand the stresses that come along with many health-oriented jobs and how this can affect not just your work life, but also your home life. I am to make a difference and improve the lives of those who give their all to provide for us."
+      "Chase Gress serves as Outreach Coordinator of the Irvine chapter of Caring for Caregivers. Chase connects with healthcare providers in the area and creates meetings and opportunities to spread awareness and provide aid.",
+      "As the child of a healthcare provider, Chase understands the stresses of health-oriented jobs and how they affect both work life and home life. Chase joined to make a difference and to improve the lives of those who give their all to provide for others.",
     ],
   },
   {
@@ -164,6 +172,195 @@ export const TEAM: PersonProfile[] = [
     photo: null,
     bio: [
       "[send bio to ayush]"
+    ],
+  },
+  {
+    name: "Ryan Toung",
+    role: "",
+    photo: "/headshots/ryan-toung.jpg",
+    bio: [
+      "Ryan Toung serves as Co-President of the Mission Viejo chapter of Caring for Caregivers. Ryan provides leadership and guidance to fellow representatives and makes sure the chapter offers consistent care for healthcare workers.",
+      "Growing up in a family of healthcare workers, Ryan has seen how much medical professionals persevere through to help their communities, even when they are heavily affected by pressure themselves. Ryan joined to make an impact in the community and help reduce healthcare burnout through the provision of care.",
+    ],
+  },
+  {
+    name: "Mario Martella",
+    role: "",
+    photo: "/headshots/mario-martella.jpg",
+    bio: [
+      "Mario Martella serves as Treasurer of the Mission Viejo chapter of Caring for Caregivers. Mario manages funds and donations, secures grants, and organizes fundraisers.",
+      "Mario joined to ease the stress faced by diligent, kind-hearted healthcare workers and to gain a deeper understanding of the medical field as an aspiring healthcare worker. Mario's goal is to have a positive impact on those who use their expertise to ensure the well-being of others.",
+    ],
+  },
+  {
+    name: "Aidan Rodriguez",
+    role: "",
+    photo: "/headshots/aidan-rodriguez.jpg",
+    bio: [
+      "Aidan Rodriguez serves as Secretary and Communications Manager of the Mission Viejo chapter of Caring for Caregivers. Aidan reaches out to healthcare clinics, plans collaborations to spread the chapter's mission, and manages most of the paperwork for meetings and planning.",
+      "Aidan joined to make a difference in the community and to give back to the healthcare professionals who have cared for them throughout their life.",
+    ],
+  },
+  {
+    name: "John Beach",
+    role: "",
+    photo: "/headshots/john-beach.jpg",
+    bio: [
+      "John Beach serves as Event Coordinator of the Mission Viejo chapter of Caring for Caregivers. John plans events and coordinates supporters by reaching out to businesses, venues, and potential donors.",
+      "John joined to support hardworking healthcare providers, who often endure overlooked stress that comes with jobs in the medical field. John is committed to relieving that pressure and tension in the busy lives of medical workers.",
+    ],
+  },
+  {
+    name: "Timothy Wasef",
+    role: "",
+    photo: "/headshots/timothy-wasef.jpg",
+    bio: [
+      "Timothy Wasef serves as Vice President and Communications of the Mission Viejo chapter of Caring for Caregivers. Timothy reaches out to local healthcare providers to identify them and express the chapter's gratitude for their contributions.",
+      "Timothy grew up surrounded by healthcare professionals in the community and witnessed the efforts they put in, often without recognition. Timothy joined to make sure those tireless efforts are not overlooked but appreciated.",
+    ],
+  },
+  {
+    name: "Chloey Park",
+    role: "",
+    photo: "/headshots/chloey-park.jpg",
+    bio: [
+      "Chloey Park serves as Video Editor of the Mission Viejo chapter of Caring for Caregivers. Chloey creates engaging video content that highlights the organization's impact and helps the chapter connect more meaningfully with its audience.",
+      "Chloey joined to help lessen the burden healthcare workers face and to ensure they feel appreciated for their hard work. Chloey's goal is to create content that looks great, feels meaningful, and leaves a lasting impression on everyone who sees it.",
+    ],
+  },
+  {
+    name: "Riya Srivastava",
+    role: "",
+    photo: "/headshots/riya-srivastava.jpg",
+    bio: [
+      "Riya Srivastava serves as Secretary of the Bay Area chapter of Caring for Caregivers. Riya reaches out to businesses in the Bay Area, maintains records, and helps coordinate the chapter's events.",
+      "Riya is proud to be part of a board and a team that uplifts nurses, EMTs, and other caregivers through meaningful service.",
+    ],
+  },
+  {
+    name: "Aaron Hwang",
+    role: "",
+    photo: "/headshots/aaron-hwang.jpg",
+    bio: [
+      "Aaron Hwang serves as Social Media Manager of the Bay Area chapter of Caring for Caregivers, where Aaron also works as editor. Aaron manages the chapter's online presence, creates engaging content, and designs posts that highlight service projects and celebrate the caregivers the chapter serves.",
+      "Aaron is grateful to contribute to a team dedicated to recognizing and supporting the nurses, EMTs, and caregivers who make a difference in the community every day.",
+    ],
+  },
+  {
+    name: "Edwin Huang",
+    role: "",
+    photo: "/headshots/edwin-huang.jpg",
+    bio: [
+      "Edwin Huang serves as Treasurer of the Bay Area chapter of Caring for Caregivers. Edwin has worked on outreach to local businesses and has managed the chapter's funds since the chapter's inception.",
+      "Edwin is proud to be a member of the board and hopes to keep contributing to positivity in the realm of healthcare.",
+    ],
+  },
+  {
+    name: "Seona Sheth",
+    role: "",
+    photo: "/headshots/seona-sheth.jpg",
+    bio: [
+      "Seona Sheth serves as Co-President of the Bay Area chapter of Caring for Caregivers. Seona leads the chapter by coordinating meetings, keeping the team organized and on schedule, and reaching out to various organizations.",
+      "Seona is proud to give back to the caregivers in society who do so much for us every day.",
+    ],
+  },
+  {
+    name: "Kyla Lee",
+    role: "",
+    photo: "/headshots/kyla-lee.jpg",
+    bio: [
+      "Kyla Lee serves as Communication Coordinator of the Bay Area chapter of Caring for Caregivers. Kyla reaches out to hospitals and medical offices to find places to collaborate.",
+      "Kyla is proud to be a member of a board that supports the caregivers in our society.",
+    ],
+  },
+  {
+    name: "Sophie Xiao",
+    role: "",
+    photo: "/headshots/sophie-xiao.jpg",
+    bio: [
+      "Sophie Xiao serves as Video Producer of the New York chapter of Caring for Caregivers. Sophie comes up with engaging video ideas and films them for the chapter, with a strong interest in content creation and giving back to the community.",
+      "Sophie hopes these videos will raise awareness of the chapter's mission and its impact on healthcare workers, and highlight the importance of addressing healthcare burnout.",
+    ],
+  },
+  {
+    name: "Ara Woo",
+    role: "",
+    photo: "/headshots/ara-woo.jpg",
+    bio: [
+      "Ara Woo serves as Co-President of the New York chapter of Caring for Caregivers. Ara oversees the chapter's events, helps manage the team, works on fundraising, and assists with event planning and communications.",
+      "Ara started the New York chapter to give back to the caregivers nearby and to show appreciation for the medical professionals who work tirelessly.",
+    ],
+  },
+  {
+    name: "Miranda Mei",
+    role: "",
+    photo: "/headshots/miranda-mei.jpg",
+    bio: [
+      "Miranda Mei serves as Secretary of the New York chapter of Caring for Caregivers. Miranda helps with networking and donor outreach, manages the chapter's funds, and helps organize events and keep communications running smoothly.",
+      "Miranda joined to give back to the medical workers who support the community and to deepen their knowledge of the medical field.",
+    ],
+  },
+  {
+    name: "Chloe Wu",
+    role: "",
+    photo: "/headshots/chloe-wu.jpg",
+    bio: [
+      "Chloe Wu serves as Event Coordinator of the New York chapter of Caring for Caregivers. Chloe helps plan event logistics, organizes gift basket deliveries, and assists with running the chapter's events.",
+      "Chloe joined to support and give back to those who dedicate themselves to caring for others, and hopes to have a positive impact on the caregivers the chapter serves.",
+    ],
+  },
+  {
+    name: "Stephen Lyu",
+    role: "",
+    photo: "/headshots/stephen-lyu.jpg",
+    bio: [
+      "Stephen Lyu serves as Treasurer of the New York chapter of Caring for Caregivers. Stephen manages the chapter's funds, oversees budgeting, sets up fundraisers, and makes sure donations are used responsibly.",
+      "Stephen joined to give back to the medical workers who work tirelessly day and night, and hopes to make sure they feel appreciated and seen.",
+    ],
+  },
+  {
+    name: "Jasmine Dhringra",
+    role: "",
+    photo: "/headshots/jasmine-dhringra.jpg",
+    bio: [
+      "Jasmine Dhringra serves as Social Media Manager of the New York chapter of Caring for Caregivers. Jasmine tells the stories of the healthcare providers the organization supports, creating clear, engaging content that highlights gift basket deliveries, community events, and student volunteering.",
+      "Jasmine also helps educate younger audiences about the emotional and physical demands of medical work and works to build an online community that appreciates caregivers, supports wellness, and understands the importance of preparing future providers for the realities of clinical life.",
+    ],
+  },
+  {
+    name: "Christy Fu",
+    role: "",
+    photo: "/headshots/christy-fu.jpg",
+    bio: [
+      "Christy Fu serves as Video Editor of the New York chapter of Caring for Caregivers. Christy edits reels and creates promotional videos about the organization and its initiatives.",
+      "Christy joined out of an interest in science and healthcare and a strong passion for helping others. Christy hopes that thoughtful baskets and cards, along with content that spreads the chapter's impact, will help reduce burnout and make healthcare workers' lives more enjoyable.",
+    ],
+  },
+  {
+    name: "Thea Johnson",
+    role: "",
+    photo: "/headshots/thea-johnson-upright.jpg",
+    bio: [
+      "Thea Johnson serves as Film Lead and Producer of the Irvine chapter of Caring for Caregivers. Thea oversees the chapter's film projects, including its social media posts and the documentary for the initiative.",
+      "Thea joined to put film skills to use in support of others in the community, and hopes the work will have a positive and inspirational impact on others.",
+    ],
+  },
+  {
+    name: "Ella Lee",
+    role: "",
+    photo: "/headshots/ella-lee-upright.jpg",
+    bio: [
+      "Ella Lee serves as Social Media Manager of the Irvine chapter of Caring for Caregivers. Ella creates the posts that appear on the organization's social media profiles.",
+      "Ella joined to give back to the community, especially to those in the healthcare industry. Given the care healthcare professionals give their patients, Ella believes it is only right to give something back to show appreciation.",
+    ],
+  },
+  {
+    name: "Helen Karupasamy",
+    role: "",
+    photo: null,
+    bio: [
+      "Helen Karupasamy serves as Event Coordinator of the Bay Area chapter of Caring for Caregivers. Helen works on social media and plans the chapter's events, keeping activities organized and effective.",
+      "Helen hopes to raise awareness of how hard doctors and caregivers work, and how often they go unrecognized in society, and to give back to the community.",
     ],
   },
 ];

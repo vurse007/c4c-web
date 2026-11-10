@@ -30,6 +30,7 @@ export default function ZeffyForm() {
           <iframe
             title="Donation form powered by Zeffy"
             src={FORM_URL}
+            loading="lazy"
             className="absolute inset-0 h-full w-full border-0"
             allow="payment"
           />
