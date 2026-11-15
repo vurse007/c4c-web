@@ -1,0 +1,23 @@
+# Caring for Caregivers
+
+> Caring for Caregivers (C4C) is a student-led 501(c)(3) nonprofit supporting the wellness of healthcare providers and raising awareness about healthcare burnout through community events, education, research, and wellness initiatives. 300+ volunteers across 7 chapters, $14,000+ raised, 200+ providers served.
+
+## Pages
+
+- [Home](https://caring4caregivers.org): Overview of the mission, chapters, and ways to get involved.
+- [About Us](https://caring4caregivers.org/about): Who we are, our mission, and our team and advisory board.
+- [Chapters](https://caring4caregivers.org/chapters): Chapters in Irvine, Mission Viejo, New York, Bay Area, Toronto, Taiwan, and Uganda.
+- [Impact](https://caring4caregivers.org/impact): Healthcare burnout context and our by-the-numbers results.
+- [Partners](https://caring4caregivers.org/partners): Organizations and sponsors we work with.
+- [Donate](https://caring4caregivers.org/donate): Give to fund care packages, community events, and awareness.
+- [Contact](https://caring4caregivers.org/contact): How to reach us and our chapters.
+
+## Chapter pages
+
+- [Irvine](https://caring4caregivers.org/chapters/irvine): Chapter board and info.
+- [Mission Viejo](https://caring4caregivers.org/chapters/mission-viejo): Chapter board and info.
+- [New York](https://caring4caregivers.org/chapters/new-york): Chapter board and info.
+- [Bay Area](https://caring4caregivers.org/chapters/bay-area): Chapter board and info.
+- [Toronto](https://caring4caregivers.org/chapters/toronto): Chapter board and info.
+- [Taiwan](https://caring4caregivers.org/chapters/taiwan): Chapter board and info.
+- [Uganda](https://caring4caregivers.org/chapters/uganda): Chapter board and info.

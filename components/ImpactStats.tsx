@@ -17,7 +17,7 @@ const STATS = [
     suffix: "+",
   },
   {
-    value: 9000,
+    value: 14000,
     label:
       "of funding support recieved from grants, fundraisers and partnerships, as well as individual donors.",
     prefix: "$",
@@ -148,7 +148,7 @@ export default function ImpactStats() {
             />
             <div className={`mb-20 grid w-max items-start ${NUMBER_CLASS}`}>
               <div aria-hidden className="invisible col-start-1 row-start-1">
-                <StatNumber display="9,000" prefix="$" suffix="+" />
+                <StatNumber display="14,000" prefix="$" suffix="+" />
               </div>
               <div className="col-start-1 row-start-1">
                 <CountUpValue

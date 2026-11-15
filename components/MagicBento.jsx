@@ -42,7 +42,7 @@ const cardData = [
     spiral: "support",
   },
   {
-    value: 9000,
+    value: 14000,
     prefix: "$",
     suffix: "+",
     grouped: true,

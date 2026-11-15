@@ -9,9 +9,32 @@ const stackSansHeadline = Stack_Sans_Headline({
   variable: "--font-sans",
 });
 
-export const metadata : Metadata = {
-  title: "Caring for Caregivers",
-  description: "Supporting the people who care for everyone else.",
+const SITE_URL = "https://caring4caregivers.org";
+const SITE_TITLE = "Caring for Caregivers";
+const SITE_DESCRIPTION = "Supporting the people who care for everyone else.";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: "./" },
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_TITLE,
+    type: "website",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  name: SITE_TITLE,
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  nonprofitStatus: "501c3",
+  sameAs: ["https://www.instagram.com/caring.forcaregivers/"],
 };
 
 
@@ -21,7 +44,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={cn("h-full", "antialiased", "font-sans", stackSansHeadline.variable)}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
