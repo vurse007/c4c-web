@@ -31,12 +31,9 @@ export const CHAPTERS: Chapter[] = [
     board: [
       { name: "Kayla Doan", role: "Co-Vice President & Lead Research Coordinator" },
       { name: "Ila Semsarieh", role: "Co-Vice President & Production" },
-      { name: "Kemy [Lastname]", role: "Treasurer" },
       { name: "Brandon Chang", role: "Event Coordinator" },
-      { name: "Emily [lastname]", role: "Event Coordinator" },
       { name: "Hailey Liu", role: "Design & Social Media" },
       { name: "Chase Gress", role: "Outreach Coordinator" },
-      { name: "Malcolm [lastname]", role: "Outreach Coordinator" },
       { name: "Audrey Eum", role: "Outreach Coordinator" },
       { name: "Nathaniel Gluzman-Chuang", role: "Research Coordinator" },
       { name: "Thea Johnson", role: "Film Lead and Producer" },

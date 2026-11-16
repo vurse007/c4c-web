@@ -117,14 +117,6 @@ export const TEAM: PersonProfile[] = [
     ],
   },
   {
-    name: "Kyle [Lastname]",
-    role: "Treasurer",
-    photo: null,
-    bio: [
-      "[send ayush ur bio]"
-    ],
-  },
-  {
     name: "Hailey Liu",
     role: "Design & Social Media",
     photo: null,
@@ -134,44 +126,12 @@ export const TEAM: PersonProfile[] = [
     ],
   },
   {
-    name: "Ethan [lastname]",
-    role: "Event Coordinator",
-    photo: null,
-    bio: [
-      "[send bio to ayush]"
-    ],
-  },
-  {
     name: "Chase Gress",
     role: "Outreach Coordinator",
     photo: "/headshots/Chase Gress.jpg",
     bio: [
       "Chase Gress serves as Outreach Coordinator of the Irvine chapter of Caring for Caregivers. Chase connects with healthcare providers in the area and creates meetings and opportunities to spread awareness and provide aid.",
       "As the child of a healthcare provider, Chase understands the stresses of health-oriented jobs and how they affect both work life and home life. Chase joined to make a difference and to improve the lives of those who give their all to provide for others.",
-    ],
-  },
-  {
-    name: "Malcolm [lastname]",
-    role: "Outreach Coordinator",
-    photo: null,
-    bio: [
-      "[send bio to ayush]"
-    ],
-  },
-  {
-    name: "Kemy [Lastname]",
-    role: "Treasurer",
-    photo: null,
-    bio: [
-      "[send bio to ayush]"
-    ],
-  },
-  {
-    name: "Emily [lastname]",
-    role: "Event Coordinator",
-    photo: null,
-    bio: [
-      "[send bio to ayush]"
     ],
   },
   {
