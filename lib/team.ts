@@ -44,7 +44,7 @@ export const TEAM: PersonProfile[] = [
   {
     name: "Braeden Bunya",
     role: "Head of Communications & Outreach",
-    photo: "/headshots/Braeden Bunya.JPG",
+    photo: "/headshots/Braeden Bunya.jpg",
     featured: true,
     bio: [
       "Braeden Bunya leads communications and outreach for Caring for Caregivers. He helps orchestrate events, works closely with partners and recipients, and helps set donation initiatives into motion.",
@@ -82,7 +82,7 @@ export const TEAM: PersonProfile[] = [
   {
     name: "Kayla Doan",
     role: "Co-Vice President",
-    photo: "/headshots/Kayla Doan.JPG",
+    photo: "/headshots/Kayla Doan.jpg",
     featured: false, //change later if needed
     bio: [
       "Kayla Doan serves as Co-Vice President and Lead Research Coordinator of Caring for Caregivers. Kayla helps plan and coordinate research opportunities to expand the Simulated Stress Exposure Program and works closely with the organization's research professors to refine initiatives that address healthcare burnout.",
@@ -144,7 +144,7 @@ export const TEAM: PersonProfile[] = [
   {
     name: "Chase Gress",
     role: "Outreach Coordinator",
-    photo: "/headshots/Chase Gress.JPG",
+    photo: "/headshots/Chase Gress.jpg",
     bio: [
       "Chase Gress serves as Outreach Coordinator of the Irvine chapter of Caring for Caregivers. Chase connects with healthcare providers in the area and creates meetings and opportunities to spread awareness and provide aid.",
       "As the child of a healthcare provider, Chase understands the stresses of health-oriented jobs and how they affect both work life and home life. Chase joined to make a difference and to improve the lives of those who give their all to provide for others.",
