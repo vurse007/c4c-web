@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     siteName: SITE_TITLE,
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 const jsonLd = {
