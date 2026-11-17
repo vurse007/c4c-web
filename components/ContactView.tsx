@@ -48,7 +48,7 @@ const CARDS: Card[] = [
   },
   {
     id: "designer",
-    title: "Website Designer: Ayush Patel",
+    title: "Website Designer",
     lines: ["Irvine, California"],
     span: "lg:col-span-2",
   },
