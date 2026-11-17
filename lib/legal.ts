@@ -103,7 +103,7 @@ export const LEGAL_DOCS: Record<LegalDocId, LegalDoc> = {
         heading: "Contact Information",
         paragraphs: [
           "If you have questions about these Terms & Conditions, please contact us at:",
-          "Email: wearecaringforcaregivers@gmail.com",
+          "[[contact:email]]",
           "Organization: Caring for Caregivers",
         ],
       },
@@ -218,7 +218,7 @@ export const LEGAL_DOCS: Record<LegalDocId, LegalDoc> = {
         heading: "Contact Information",
         paragraphs: [
           "If you have questions about this Privacy Policy or our data practices, please contact us at:",
-          "Email: wearecaringforcaregivers@gmail.com",
+          "[[contact:email]]",
           "Organization: Caring for Caregivers",
         ],
       },
@@ -283,8 +283,7 @@ export const LEGAL_DOCS: Record<LegalDocId, LegalDoc> = {
         paragraphs: [
           "We welcome feedback on the accessibility of our website. If you encounter an accessibility issue, require assistance, or have suggestions for improvement, please contact our accessibility coordinator:",
           "Accessibility Coordinator: Ayush Patel",
-          "Phone: (949) 469-8195",
-          "Email: wearecaringforcaregivers@gmail.com",
+          "[[contact]]",
           "We will make every reasonable effort to respond promptly and address accessibility concerns in a timely manner.",
         ],
       },

@@ -1,56 +1,55 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { MapPin } from "lucide-react";
+import {
+  RevealControl,
+  RevealProvider,
+  RevealedContact,
+} from "@/components/RevealContact";
 
 type Card = {
+  /** Key into the server-side contact table (see app/api/reveal). */
+  id: string;
   title: string;
   lines?: string[];
-  phone?: string;
-  email?: string;
   instagram?: string;
   span?: string;
 };
 
 const CARDS: Card[] = [
   {
+    id: "main",
     title: "Main",
-    email: "wearecaringforcaregivers@gmail.com",
     instagram: "@caring.forcaregivers",
     span: "lg:col-span-2",
   },
   {
+    id: "irvine",
     title: "Irvine Chapter",
     lines: ["Irvine, CA 92602"],
-    phone: "(631) 417-5779",
-    email: "joshualin0511@gmail.com",
   },
   {
+    id: "new-york",
     title: "New York Chapter",
     lines: ["Jericho, NY 11753"],
-    phone: "(949) 664-1230",
-    email: "reneeboalee@gmail.com",
   },
   {
+    id: "bay-area",
     title: "Bay Area Chapter",
     lines: ["Los Altos, CA 94022"],
-    phone: "(949) 512-0645",
-    email: "cw.301135@gmail.com",
   },
   {
+    id: "toronto",
     title: "Toronto Chapter",
     lines: ["Toronto, Canada"],
-    phone: "(949) 469-8195",
-    email: "ayushppatel@outlook.com",
   },
   {
+    id: "mission-viejo",
     title: "Mission Viejo Chapter",
     lines: ["Mission Viejo, CA 92691"],
-    phone: "(949) 302-6351",
-    email: "georgeypan1@gmail.com",
   },
   {
+    id: "designer",
     title: "Website Designer: Ayush Patel",
     lines: ["Irvine, California"],
-    phone: "(949) 469-8195",
-    email: "ayushppatel@outlook.com",
     span: "lg:col-span-2",
   },
 ];
@@ -76,7 +75,7 @@ function InstagramIcon() {
 
 const iconClass = "h-5 w-5 shrink-0 text-blue-500 transition-colors group-hover:text-white";
 
-const telHref = (phone: string) => `tel:+1${phone.replace(/\D/g, "")}`;
+const CONTACT_IDS = CARDS.map((card) => card.id);
 
 const linkClass =
   "flex w-fit items-center gap-3 break-all underline-offset-4 transition-colors hover:underline";
@@ -96,7 +95,9 @@ export default function ContactView() {
         </p>
         <div aria-hidden className="mt-16 h-px w-full bg-white/30 sm:mt-20" />
 
-        <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <RevealProvider keys={CONTACT_IDS}>
+        <RevealControl tone="dark" announce className="mt-12 max-w-sm" />
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {CARDS.map((card) => (
             <article
               key={card.title}
@@ -117,18 +118,14 @@ export default function ContactView() {
                 ))}
               </div>
               <div className="flex flex-col gap-2 text-base font-light text-white/85 sm:text-lg">
-                {card.phone && (
-                  <a href={telHref(card.phone)} className={linkClass}>
-                    <Phone className={iconClass} aria-hidden />
-                    {card.phone}
-                  </a>
-                )}
-                {card.email && (
-                  <a href={`mailto:${card.email}`} className={linkClass}>
-                    <Mail className={iconClass} aria-hidden />
-                    {card.email}
-                  </a>
-                )}
+                <RevealedContact
+                  id={card.id}
+                  show={card.id === "main" ? "email" : "both"}
+                  variant="card"
+                  linkClassName={linkClass}
+                  iconClassName={iconClass}
+                  hiddenLabel="Contact details hidden until you verify."
+                />
                 {card.instagram && (
                   <a
                     href={`https://www.instagram.com/${card.instagram.slice(1)}/`}
@@ -146,6 +143,7 @@ export default function ContactView() {
             </article>
           ))}
         </div>
+        </RevealProvider>
       </div>
     </section>
   );

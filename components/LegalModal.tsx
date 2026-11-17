@@ -4,38 +4,15 @@ import { useEffect, useId, useRef } from "react";
 import { createPortal } from "react-dom";
 import { X } from "lucide-react";
 import { LEGAL_DOCS, type LegalDocId } from "@/lib/legal";
+import RevealContact from "@/components/RevealContact";
 
 function ParagraphText({ text }: { text: string }) {
-  if (text.startsWith("Email: ")) {
-    const email = text.slice("Email: ".length);
+  // Contact details are never in this bundle: they're fetched after Turnstile.
+  if (text === "[[contact]]" || text === "[[contact:email]]") {
     return (
-      <p>
-        Email:{" "}
-        <a
-          href={`mailto:${email}`}
-          className="underline decoration-black/25 underline-offset-2 hover:decoration-black/60"
-        >
-          {email}
-        </a>
-      </p>
+      <RevealContact tone="light" show={text === "[[contact]]" ? "both" : "email"} />
     );
   }
-
-  if (text.startsWith("Phone: ")) {
-    const phone = text.slice("Phone: ".length);
-    return (
-      <p>
-        Phone:{" "}
-        <a
-          href={`tel:${phone.replace(/[^\d+]/g, "")}`}
-          className="underline decoration-black/25 underline-offset-2 hover:decoration-black/60"
-        >
-          {phone}
-        </a>
-      </p>
-    );
-  }
-
   return <p>{text}</p>;
 }
 

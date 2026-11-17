@@ -4,6 +4,7 @@ import { useCallback, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LegalModal from "@/components/LegalModal";
+import RevealContact from "@/components/RevealContact";
 import { LEGAL_LINKS, type LegalDocId } from "@/lib/legal";
 import { DONATE_HREF, NAV_LINKS } from "@/lib/nav";
 
@@ -106,18 +107,7 @@ export default function SiteFooter() {
 
         <div className="flex flex-col gap-3 text-[15px] font-light text-white/75 lg:items-end lg:text-right">
           <p>Irvine, CA 92602</p>
-          <a
-            href="tel:+16314175779"
-            className="w-fit transition-colors hover:text-white"
-          >
-            (631) 417-5779
-          </a>
-          <a
-            href="mailto:wearecaringforcaregivers@gmail.com"
-            className="w-fit break-all transition-colors hover:text-white"
-          >
-            wearecaringforcaregivers@gmail.com
-          </a>
+          <RevealContact tone="dark" className="lg:items-end" />
         </div>
       </div>
 
